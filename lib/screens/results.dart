@@ -104,6 +104,10 @@ class _ListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OpenContainer(
+      closedColor: Colors.transparent,
+      openColor: Colors.transparent,
+      transitionType: ContainerTransitionType.fadeThrough,
+      transitionDuration: const Duration(seconds: 2),
       closedBuilder: (context, action) => ListTile(
         contentPadding:
             const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
